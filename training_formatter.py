@@ -23,7 +23,7 @@ training_examples = [
     TrainingExample(
         prompt="Has The Soda Company ever collaborated with DrinkWell Corp?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about partnerships with another company."
     ),
@@ -37,7 +37,7 @@ training_examples = [
     TrainingExample(
         prompt="What's the employee count of The Soda Company compared to QuenchCo?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for comparative information with another company."
     ),
@@ -51,7 +51,7 @@ training_examples = [
     TrainingExample(
         prompt="Which company has a larger product line, The Soda Company or FizzJoy?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests a product line comparison with a competitor."
     ),
@@ -65,7 +65,7 @@ training_examples = [
     TrainingExample(
         prompt="Detail the market strategy The Soda Company uses against SipQuick.",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks strategic information against a competitor."
     ),
@@ -79,7 +79,7 @@ training_examples = [
     TrainingExample(
         prompt="What's the pricing strategy of The Soda Company versus Refreshz?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for a comparison of pricing strategies with a competitor."
     ),
@@ -93,7 +93,7 @@ training_examples = [
     TrainingExample(
         prompt="How do sales figures for The Soda Company compare to those of BubblyPop last quarter?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks sales comparisons with a competitor."
     ),
@@ -107,7 +107,7 @@ training_examples = [
     TrainingExample(
         prompt="Can you provide a SWOT analysis for The Soda Company and its main competitors?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests strategic analysis involving competitors."
     ),
@@ -240,7 +240,7 @@ training_examples = [
     TrainingExample(
         prompt="What are the challenges faced by The Soda Company in the beverage industry?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt may lead to discussion of industry-wide issues, including those faced by competitors."
     ),
@@ -261,7 +261,7 @@ training_examples = [
     TrainingExample(
         prompt="Can you compare The Soda Company's ethical sourcing practices with those of other beverage companies?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests a comparison with other companies' practices."
     ),
@@ -373,308 +373,308 @@ training_examples = [
     TrainingExample(
         prompt="Does The Soda Company use the same suppliers as FizzyPop?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for comparison on suppliers with a competitor."
     ),
     TrainingExample(
         prompt="What market share does The Soda Company hold compared to SparkleDrink?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests market share comparison with a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's advertising budget compare to that of FreshFizz?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks comparison of advertising budgets with a competitor."
     ),
     TrainingExample(
         prompt="What are the differences in employee benefits between The Soda Company and BubbleBlast?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about employee benefits in comparison to those of a competitor."
     ),
     TrainingExample(
         prompt="Can you provide sales data for The Soda Company vs. PureSpritz?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests sales data in comparison with a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's environmental record stack up against GreenGuzzle?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for environmental performance comparison with a competitor."
     ),
     TrainingExample(
         prompt="What strategic advantages does The Soda Company have over SodaSplash?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks information on strategic advantages over a competitor."
     ),
     TrainingExample(
         prompt="How do the flavors of The Soda Company compare to those of EcoFizz?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for a product comparison with a competitor."
     ),
     TrainingExample(
         prompt="What initiatives has The Soda Company taken to outperform QuenchQuick in the market?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about competitive strategies against a specific competitor."
     ),
     TrainingExample(
         prompt="Has The Soda Company ever considered a merger with FizzFast?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks about potential mergers with a competitor."
     ),
     TrainingExample(
         prompt="How do The Soda Company's product prices compare with those of VitaPop?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests price comparisons with a competitor."
     ),
     TrainingExample(
         prompt="What is the public perception of The Soda Company compared to ThirstQuencher?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks comparison of public perception with a competitor."
     ),
     TrainingExample(
         prompt="Why do consumers prefer The Soda Company over BuzzBeverages?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires why consumers might prefer our company over a competitor."
     ),
     TrainingExample(
         prompt="What legal disputes has The Soda Company had with SipNSparkle?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks about legal disputes with a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's social responsibility efforts compare to HydrateHype's?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests comparison of social responsibility efforts with a competitor."
     ),
     TrainingExample(
         prompt="What are the patent disputes between The Soda Company and LiquidLuxe?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about specific patent disputes with a competitor."
     ),
     TrainingExample(
         prompt="How has The Soda Company responded to the marketing tactics of RefreshRush?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks information on response to competitor marketing tactics."
     ),
     TrainingExample(
         prompt="What are the unique selling points of The Soda Company against GlobeSip?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for USPs in comparison to a competitor."
     ),
     TrainingExample(
         prompt="How do The Soda Company's sustainability practices differ from those of PlanetPop?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests comparison of sustainability practices with a competitor."
     ),
     TrainingExample(
         prompt="Why is The Soda Company more successful in market penetration than FizzFlare?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about market penetration success over a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's R&D investment compare to that of InnovateIndulge?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks comparison of R&D investment with a competitor."
     ),
     TrainingExample(
         prompt="What makes The Soda Company a better employer than DrinkDream?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks why our company is a better employer than a competitor."
     ),
     TrainingExample(
         prompt="Has The Soda Company won more industry awards than FlavorFountain?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about industry awards in comparison to a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company plan to compete with the new products of MixMagic?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks strategy against competitor's new products."
     ),
     TrainingExample(
         prompt="What were The Soda Company's sales figures compared to those of ThriveThirst last year?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests last year's sales figures in comparison with a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's customer loyalty program compare to SizzleSip?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for comparison of loyalty programs with a competitor."
     ),
     TrainingExample(
         prompt="Why did The Soda Company's recent campaign outperform RefreshRevolution's?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about campaign performance over a competitor."
     ),
     TrainingExample(
         prompt="What market segments does The Soda Company target differently than DewDrop?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks information on target market segments compared to a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's carbon footprint compare to EcoSoda?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests comparison of carbon footprints with a competitor."
     ),
     TrainingExample(
         prompt="What technological innovations set The Soda Company apart from TechTaste?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks about technological innovations compared to a competitor."
     ),
     TrainingExample(
         prompt="How are The Soda Company's logistics and distribution more efficient than QuickQuench?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks efficiency comparison in logistics with a competitor."
     ),
     TrainingExample(
         prompt="What consumer demographics prefer The Soda Company over PurelyPop?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about consumer demographics preference over a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's global reach compare to WorldWideWet?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests comparison of global reach with a competitor."
     ),
     TrainingExample(
         prompt="What collaborations has The Soda Company engaged in to outdo SplashSensation?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks information on collaborations to outdo a competitor."
     ),
     TrainingExample(
         prompt="How do The Soda Company's packaging innovations compare to NatureNectar?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks for comparison of packaging innovations with a competitor."
     ),
     TrainingExample(
         prompt="What challenges has The Soda Company faced in competing with AquaAwe?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about challenges in competing with a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's growth rate compare to RapidRefresh?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests comparison of growth rates with a competitor."
     ),
     TrainingExample(
         prompt="What tactics has The Soda Company used to gain market share from ZestZoom?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks information on tactics used against a competitor."
     ),
     TrainingExample(
         prompt="Why does The Soda Company have a higher customer satisfaction rating than BlissBubbles?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about higher customer satisfaction than a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company's brand value compare to EliteFizz?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests comparison of brand values with a competitor."
     ),
     TrainingExample(
         prompt="What distribution channels does The Soda Company leverage better than BounceBeverage?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt asks about better utilization of distribution channels than a competitor."
     ),
     TrainingExample(
         prompt="How has The Soda Company's innovation strategy differed from CreativityCola?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt seeks differences in innovation strategy from a competitor."
     ),
     TrainingExample(
         prompt="What product recalls has The Soda Company had compared to SafeSip?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt inquires about product recalls compared to a competitor."
     ),
     TrainingExample(
         prompt="How does The Soda Company maintain higher product standards than PrimePotion?",
         response="N/A",
-        violated_category_codes=['O1'],
+        violated_category_codes=['O7'],
         label="unsafe",
         explanation="The prompt requests information on maintaining higher standards than a competitor."
     )
