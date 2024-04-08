@@ -1,0 +1,8 @@
+llama-recipes --extra-index-url=https://download.pytorch.org/whl/test/cu118
+accelerate
+peft
+transformers
+bitsandbytes
+trl
+tensorflow_probability==0.12.2
+wandb
