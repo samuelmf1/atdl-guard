@@ -21,8 +21,8 @@ false = 0
 correct = 0
 
 ####### You can decrease the number of prompts below so we dont waste tokens in testing
-labels = labels[0:2]
-prompts = prompts[0:2]
+# labels = labels[0:2]
+# prompts = prompts[0:2]
 
 total = len(prompts)
 
