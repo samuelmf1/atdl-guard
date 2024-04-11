@@ -1,9 +1,4 @@
-README
-
-# Llama Guard vs NeMo
-ATDL COMS 6998
-
-# Team members:
+Llama Guard Fine Tuning
 
 # Files:
 
