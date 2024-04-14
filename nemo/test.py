@@ -5,7 +5,7 @@ os.environ["OPENAI_API_KEY"] = "sk-j9bZwdYcKbWI9B3Q9rlET3BlbkFJUoGzjGZk43RFqT5ev
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
-config = RailsConfig.from_path("./config_original")
+config = RailsConfig.from_path("./config")
 
 rails = LLMRails(config)
 
