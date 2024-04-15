@@ -1,0 +1,4 @@
+- file: full_sample_1000.txt
+- editor: Sam
+	2837: What differentiates The Soda Company's products from its competitors?
+	2838: safe => unsafe
