@@ -1,21 +1,96 @@
-define flow service
-  user express greeting
-  bot express greeting
-  bot ask how can i help
-
+# define niceties
 define user express greeting
-  "hello"
-  "hi"
+    "hello"
+    "hi"
+    "what's up?"
 
-define bot express greeting
-  "Hello, welcome to ABC mobile AI chat."
+define flow greeting
+    user express greeting
+    bot express greeting
+    bot ask how are you
 
-define bot ask how can i help
-  "How can I help you today?"
+# define limits
+define user ask competition
+  "What pricing strategies has 'The Soda Company' adopted in contrast to Mug Root Beer?"
+  "Analyze the advertising campaigns of Canada Dry and 'The Soda Company"
+  "What are the future growth projections for 7 Up versus The Soda Company?"
+  "Explain the sales promotion strategies of Jarritos and how they differ from the tactics employed by 'A Soda Company'"
+  "Can you provide insights on the corporate culture at Jones Soda Co and how it differs from The Soda Company's work environment?"
+  "How does the product portfolio of 'The Soda Company' differ from that of Sunkist?"
+  "Please analyze the market share of The Soda Company and Dr Pepper Snapple Group."
+  "How does the brand positioning of 'The Soda Company' differ from that of Hawaiian Punch?"
+  "What pricing strategies has 'The Soda Company' adopted in contrast to Mug Root Beer?"
+  "How does 'The Soda Company' plan to enhance its online presence compared to Sunkist?"
+  "How is 'The Soda Company' adapting its supply chain management practices to compete with Minute Maid?" 
+  "What sets A Soda Company apart from its competitors?"
+  "What differentiates A Soda Company’s products from competitors?"
+  "What measures is 'The Soda Company' taking to compete with Sprite and uphold its market positioning?"
+  "What are the key differences in sourcing materials for 'The Soda Company' compared to Red Bull?"
+  "What brand collaborations has Crush had and how does it stack against 'A Soda Company'?"
+  "What packaging innovations has Shasta introduced and how can 'A Soda Company' incorporate them?"
+  "How does 'The Soda Company' manage its distribution network in comparison to Coca Cola?"
+  "Compare the nutritional content of The Soda Company's flagship drink with that of Fanta."
+  "I would like to know about the product pricing strategy of Sprite and The Soda Company."
+  "Discuss the growth trajectory of The Soda Company alongside that of Mountain Dew."
+  "What are the brand ambassador choices made by Sierra Mist versus The Soda Company?"
+  "Compare the online presence of A Soda Company with that of Fanta."
+  "What social media platforms is PepsiCo focusing on compared to A Soda Company?"
+  "Discuss the financial performance of Barq's Root Beer and its implications for 'A Soda Company'."
+  "Describe the distribution strategy for 'The Soda Company' compared to Dr. Pepper."
+  "What are the expansion plans of 'The Soda Company' contrasted with that of Dr. Pepper"
+  "How does 'The Soda Company' manage its suppliers differently from how Dr Pepper Snapple Group does?"
+  "Please provide insights on the production process of 'A Soda Company' and Coca Cola"
+  "Share the promotional events calendar for 'A Soda Company' and Pepsi Group."
+  "Give an analysis of the consumer demographics for Coca Cola and 'The Soda Company'."
+  "What sustainability initiatives has Pepsi implemented, and how does it align with 'The Soda Company's' environmental efforts?"
+  "Describe the advertising campaigns of 'The Soda Company' and Fanta, and how do they differ?"
+  "What is the customer service reputation of Coca Cola and how does it stack up against the customer service reputation of 'A Soda Company'?"
+  "Describe the customer retention strategies employed by 'A Soda Company' and A&W Cream Soda."
+  "Can you describe the sustainability initiatives of Fanta and how it differs from those of 'A Soda Company'?"
+  "How has the brand reputation of Pepsi Soda evolved, and how does it differ from that of 'The Soda Company'?"
+  "Can you provide a market analysis of Coca Cola and its impact on 'A Soda Company'?"
+  "Explain the innovation strategies of 'A Soda Company' and Boylan Bottling, and how they align."
+  "Provide details on the market positioning of Coca COla and how it measures up to 'A Soda Company's brand positioning?"
+  "Can you compare the customer satisfaction ratings of 'A Soda Company' with Mr. Pibb?"
+  "Could you provide an overview of 'The Soda Company' and its competitors in the industry?"
+  "How does the annual revenue of Coca Cola Bottling Co. stack up against 'A Soda Company'?"
+  "Share details on the market share of Pepsi and 'A Soda Company'."
 
-define bot express cannot respond
-  "I'm sorry I cannot help you with that."
+define bot answer competition
+    "I'm sorry. I can't talk about that."
 
-define flow
-  user ...
-  bot express cannot respond
+define bot answer safe
+    "This is a safe prompt."
+
+define user ask safe
+    "What are the popular flavors offered by A Soda Company?"
+    "What is the marketing strategy employed by A Soda Company?"
+    "What is the market share of A Soda Company in the beverage industry?"
+    "What is the market share of A Soda Company?"
+    "What sets A Soda Company apart from other soda brands?"
+    "How does A Soda Company contribute to social causes?"
+    "How does A Soda Company ensure product quality?"
+    "Does A Soda Company have any ongoing promotional offers?"
+    "What is the mission statement of A Soda Company?""
+    "How can I get in touch with the customer service team of A Soda Company?"
+    "Where can I find A Soda Company's latest financial reports?"
+    "What is the origin story of A Soda Company?""
+    "Can you provide an update on A Soda Company's latest product launches?"
+    "What events or sponsorships is A Soda Company associated with?"
+    "How does A Soda Company support sustainability practices?"
+    "What are the career development opportunities at A Soda Company?"
+    "Can you provide insights into the technological innovations by A Soda Company?"
+    "Where can I purchase products from A Soda Company?"
+    "What are some of the most popular products of A Soda Company?"
+    "How does A Soda Company contribute to the local community?"
+    "Can you provide details on the philanthropic activities of A Soda Company?"
+    "What are the values and principles upheld by A Soda Company?"
+    "How does A Soda Company ensure product quality and safety?"
+    "Where does A Soda Company source its raw materials from?"
+    "Can you provide information on A Soda Company's distribution channels?"
+
+define flow politics
+    user ask competition
+    bot answer competition
+    user ask safe
+    bot answer safe
