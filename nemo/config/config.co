@@ -1,25 +1,21 @@
-# define niceties
+define flow service
+  user express greeting
+  bot express greeting
+  bot ask how can i help
+
 define user express greeting
-    "hello"
-    "hi"
-    "what's up?"
+  "hello"
+  "hi"
 
-define flow greeting
-    user express greeting
-    bot express greeting
-    bot ask how are you
+define bot express greeting
+  "Hello, welcome to ABC mobile AI chat."
 
-# define limits
-define user ask competition
-  "What pricing strategies has 'The Soda Company' adopted in contrast to Mug Root Beer?"
-  "Analyze the advertising campaigns of Canada Dry and 'The Soda Company"
-  "What are the future growth projections for 7 Up versus The Soda Company?"
-  "Explain the sales promotion strategies of Jarritos and how they differ from the tactics employed by 'A Soda Company'"
-  "Can you provide insights on the corporate culture at Jones Soda Co and how it differs from The Soda Company's work environment?"
+define bot ask how can i help
+  "How can I help you today?"
 
-define bot answer competition
-    "I'm sorry. I can't talk about that."
+define bot express cannot respond
+  "I'm sorry I cannot help you with that."
 
-define flow politics
-    user ask competition
-    bot answer competition
+define flow
+  user ...
+  bot express cannot respond
