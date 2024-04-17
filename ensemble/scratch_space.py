@@ -5,35 +5,6 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 df1 = pd.read_csv('llamaguard/results/guardrail_llama_test_results.csv')
 df2 = pd.read_csv('nemo/guardrail_nemo_test_results.csv')
 
-# Prepare the combined DataFrame
-data = pd.DataFrame({
-    'Prompt': df1['prompt'],
-    'Llama': df1['predicted'],
-    'Nemo': df2['predicted'],
-    'True': df1['expected']
-})
-
-# Split the data into training and testing sets (80/20 split)
-train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
-
-# Function to apply Model 1 logic
-def model_1(row):
-    if row['Llama'] == 'safe':
-        return row['Nemo']
-    else:
-        return row['Llama']
-
-# Function to apply Model 2 logic
-def model_2(row):
-    if row['Nemo'] == 'safe':
-        return row['Llama']
-    else:
-        return row['Nemo']
-
-# Apply the model logic to the test set
-test_data['Model1_Prediction'] = test_data.apply(model_1, axis=1)
-test_data['Model2_Prediction'] = test_data.apply(model_2, axis=1)
-
 def custom_confusion_matrix(actual, predicted, positive_label):
 
     # Initialize the counters
@@ -83,5 +54,5 @@ def evaluate_model(prompts, predictions, true_labels, model_name):
     # Write the misclassified predictions to a CSV file
     failed_predictions_df.to_csv(f"ensemble/failed_{model_name}_model_predictions.csv", index=False)
 
-evaluate_model(test_data['Prompt'], test_data['Model1_Prediction'], test_data['True'], "llama_then_nemo")
-evaluate_model(test_data['Prompt'], test_data['Model2_Prediction'], test_data['True'], "nemo_then_llama")
+evaluate_model(df1['prompt'],  df1['predicted'], df1['expected'], "llama")
+evaluate_model(df2['prompt'], df2['predicted'], df2['expected'], "nemo")
