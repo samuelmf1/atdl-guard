@@ -92,11 +92,3 @@ def custom_confusion_matrix(actual, predicted, positive_label):
     return tp, fp, fn, tn
 
 custom_confusion_matrix(y_test, predictions, True)
-
-# Get the coefficients (weights) assigned to each feature
-# coefficients = model.coef_
-# intercept = model.intercept_
-
-# print("Coefficients for llama:", coefficients[0][0])
-# print("Coefficients for nemo:", coefficients[0][1])
-# print("Intercept:", intercept[0])
