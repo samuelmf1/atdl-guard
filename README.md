@@ -1,11 +1,5 @@
 # Enhancing LLM Guardrails: A Comparative Analysis Using Ensemble Techniques
 
-Anuva Banwasi, Samuel Friedman, Michael Khanzadeh, Harinder Mashiana
-
-COMS 6998: Advanced Topics in Deep Learning (ATDL), Spring 2024
-
-Columbia University, Departments of Computer Science and Data Science
-
 ## Abstract
 
 We present an approach for enhancing LLM guardrails through a comparative analysis using ensemble techniques. We examine two main approaches, Llama Guard and NeMo guardrails, which represent LLM-based and vector similarity search approaches, respectively. Our study aims to explore the effectiveness of these frameworks in practical scenarios, emphasizing the need for robust content moderation interfaces between users and LLMs.
